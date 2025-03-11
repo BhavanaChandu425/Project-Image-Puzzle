@@ -1,0 +1,115 @@
+/* Styling for the entire body */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    
+}
+
+p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Game board section */
+/* Center the entire game board section */
+#game-board-section {
+    display: flex;
+    flex-direction: column; /* Stack heading and game board vertically */
+    align-items: center; /* Horizontally center content */
+    margin: 10px auto; /* Reduce outer grey space and center the section */
+    padding: 10px;
+    background-color: #f0f0f0; /* Light grey background */
+    border-radius: 8px; /* Rounded corners for aesthetics */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: fit-content; /* Shrink to fit the game board and heading */
+}
+
+/* Heading for the game board */
+#game-board-section h2 {
+    margin-bottom: 10px; /* Add a small gap below the heading */
+    font-size: 1.8em;
+    color: #333;
+    text-align: center;
+}
+
+/* Adjust game board positioning */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* 3x3 grid */
+    grid-template-rows: repeat(3, 100px); /* 3x3 grid */
+    gap: 5px; /* Space between tiles */
+    background-color: white; /* Match the background inside */
+    padding: 10px; /* Slight padding around the tiles */
+    border-radius: 8px; /* Rounded edges for the board */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+
+.tile {
+    width: 100px;
+    height: 100px;
+    background-size: 300px 300px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+.tile:hover {
+    background-color: #bbb;
+}
+
+/* Empty tile styles */
+.hidden-tile {
+    background: none;
+    border: none;
+    visibility: hidden;
+}
+
+/* Instructions section */
+#instructions {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#instructions h2 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+#instructions ol {
+    list-style: decimal inside;
+    color: #555;
+    font-size: 1.2em;
+}
+
+/* Footer styles */
+/*footer {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+}*/
